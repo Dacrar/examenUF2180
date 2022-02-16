@@ -12,9 +12,18 @@ import java.sql.SQLException;
  *
  */
 public class ConexionBD {
-
+	/*  EJERCICIO 1 APARTADO 2.1
+	 *  Para crear el usuario en la base de datos colocamos en MySQL los siguientes comandos:
+	 * 
+	 * create user empresa identified by '123456';
+	   grant all privileges on empresa.* to empresa; 
+	   
+	 * Luego añadimos el nuevo usuario en sql para comprobar la conexion, añadimos el usuario y contraseña y comprobamos que funcina,
+	 * una vez hecho cambiamos en la clase conexion el usuario y contraseña.
+	 */
+	
 	private static final String database = "empresa";
-	private static final String usuario = "root";
+	private static final String usuario = "empresa";
 	private static final String contraseña = "123456";
 	private static final String url="jdbc:mysql://localhost/"+database;
 	
